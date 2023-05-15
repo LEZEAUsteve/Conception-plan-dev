@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+}
+
+.nomBat {
+    margin-left: 10%;
+}
+
+.salles {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.salle {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nomSalle {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.etat {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 100%;
+
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+li {
+    text-align: center;
+}
