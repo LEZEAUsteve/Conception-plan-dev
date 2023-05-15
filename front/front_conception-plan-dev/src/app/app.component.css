@@ -9,6 +9,7 @@ body {
   background-color: #D6CECC;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
 }
 
 /* Style the header links */
