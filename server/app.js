@@ -16,7 +16,7 @@ module.exports = {
 
 
 
-
+require("./config/jwt.config");
 app.use(cookieParser());
 
 
