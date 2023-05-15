@@ -1,14 +1,18 @@
 const mongoose = require("mongoose");
 const schema = mongoose.Schema;
 const bcrypt = require("bcrypt");
+const {date} = require("joi");
 mongoose.set("useUnifiedTopology", true);
 
 const userSchema = schema({
-    username: { type: String, required: true, unique: true },
+    firstname: { type: String, required: true, unique: true },
+    lastname: { type: String, required: true, unique: true },
     local: {
         email: { type: String, required: true, unique: true },
         password: { type: String, required: true },
     },
+    avatar: { type: String, required: false },
+    birthday: { type: Date, required: true },
 });
 
 userSchema.statics.hashPassword = async (password) => {
